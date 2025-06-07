@@ -1,34 +1,24 @@
+// src/styles/GlobalStyle.ts
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
   }
 
   body {
-    background-color: #f9f9f9;
-  }
-
-  input, button {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    margin-top: 1rem;
+    background-color: #f1f3f5;
+    color: #333;
   }
 
   button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
+    font-family: inherit;
   }
 
-  button:hover {
-    background-color: #0056b3;
+  input, textarea {
+    font-family: inherit;
   }
 `;
-
-export default GlobalStyle;

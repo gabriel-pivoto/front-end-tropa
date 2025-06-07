@@ -11,6 +11,8 @@ import {
   Card,
   LeftSection,
   RightSection,
+  Title, 
+  SubTitle
 } from '../styles/Login.styles';
 
 export function Login() {
@@ -31,8 +33,8 @@ export function Login() {
     <Card>
       <LeftSection>
         <Logo />
-        <h2>Bem-vindo de volta</h2>
-        <p>Entre com sua conta para acessar o painel.</p>
+        <Title>Bem-vindo de volta!</Title>
+        <SubTitle>Entre com sua conta para acessar o painel.</SubTitle>
 
         <form onSubmit={handleSubmit}>
           <Input

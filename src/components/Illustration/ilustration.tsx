@@ -1,5 +1,5 @@
     // src/components/Illustration.tsx
-import illustration from '../../assets/logo.svg';
+import illustration from '../../assets/man.svg';
 
 export function Illustration() {
   return (

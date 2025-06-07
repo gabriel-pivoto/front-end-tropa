@@ -1,6 +1,9 @@
 // src/styles/Login.styles.ts
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
+export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+`;
 export const Container = styled.div`
   height: 100vh;
   width: 100%;
@@ -58,4 +61,21 @@ export const RightSection = styled.div`
     width: 80%;
     max-width: 350px;
   }
+`;
+// <uniquifier>: Use a unique and descriptive class name
+export const Title = styled.h1`
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  color: #cc6237;
+`;
+
+export const SubTitle = styled.p`
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #2a4d8e;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
 `;
